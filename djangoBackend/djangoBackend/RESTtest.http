@@ -1,0 +1,38 @@
+POST http://127.0.0.1:8000/api/login/
+Content-Type: application/json
+
+{
+    "username": "jona",
+    "password": "asas"
+}
+
+###
+
+#testuser4 token: "f196874a3a19099eac80b7c1e23b636bebb1ef8d"
+
+GET http://127.0.0.1:8000/api/items/?pageNumber=1
+
+
+###
+
+POST http://127.0.0.1:8000/api/items/
+Authorization: Token 5d7ed7d608ec0c293156121bd986060fd2558868
+Content-Type: application/json
+
+{
+    "title": "testItem",
+    "description": "testDescription",
+    "price": 7.54,
+    "owner": 70
+}
+###
+
+GET http://127.0.0.1:8000/api/orders/
+Authorization: Token 4aac6aa95cd98812a2cce8f19be25b86cd63aded
+Content-Type: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/logout/
+Content-Type: application/json
+

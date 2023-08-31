@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+        .graphicsCard {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            min-height: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .graphicsCard:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+            flex: 33.33%;
+            justify-content: center;
+        }
+
+        .infoCard {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 80%;
+            margin: auto;
+            min-height: 200px;
+            margin-top: 150px;
+            justify-content: center;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        .infoCards {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            width: 75%;
+            margin: auto;
+            min-height: 150px;
+            margin-top: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    
+
+    <title>Legit Shop AB</title>
+  </head>
+  <body>
+    <div class="graphicsCard">
+        <div class="container">
+            <img src="" alt="very nice graphics">
+        </div>
+        <div class="container">
+            <img src="" alt="very nice graphics">
+        </div>
+        <div class="container">
+            <img src="" alt="very nice graphics">
+        </div>
+    </div>
+    <div class="infoCard">
+        <h1 style="text-align: center;">Info</h1>
+        <div class="infoCards">
+            <h3 style="text-align: center; padding-top: 5%;">Our page has {{numberOfItems}} items and {{numberOfUsers}} active users!</h3>
+        </div>
+        <div class="infoCards">
+            <h2 style="text-align: center;">Populate database</h2>
+            <h3 style="text-align: center;">Delete all items and generate 6 new users and 30 new items!</h3>
+            <button type="button" style="display: block; margin-left: auto; margin-right: auto;" onclick="location.href='populateDatabase'">Populate</button>
+            <button type="button" style="display: block; margin-left: auto; margin-right: auto;" onclick="location.href='clearDatabase'">Clear database</button>
+        </div>
+        <div class="infoCards">
+            <h3 style="text-align: center;">N.B.: By going to the store you accept our terms and conditions.</h3>
+            <a href="/shop"><button style="display: block; margin-left: auto; margin-right: auto;">Go to shop!</button></a>
+        </div>
+    </div>
+  </body>
+</html>
